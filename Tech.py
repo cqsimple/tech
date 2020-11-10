@@ -48,9 +48,9 @@ while ans:
     elif ans=="11":
       arp_scan = os.system("sudo arp-scan --interface=eth0 --localhost")
     elif ans=="12":
-      arp_scan = os.system("sudo fail2ban restart")
+      arp_scan = os.system("sudo service fail2ban restart")
     elif ans=="13":
-      arp_scan = os.system("sudo fop2 restart")
+      arp_scan = os.system("sudo service fop2 restart")
     elif ans=="99":
       Quit = os.system("exit")
       clear=os.system("clear")
