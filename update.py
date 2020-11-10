@@ -1,1 +1,1 @@
-install os.system
+import os
