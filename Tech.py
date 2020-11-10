@@ -19,6 +19,8 @@ while ans:
     9.PM2 List
     10.Restart Clearly Devices Module
     11.Scan Network (Local systems only)
+    12.Restart Fail2Ban (Intrusion Detection)
+    13.Restart Dashboard (FOP2)
     99.Exit/Quit
     999.Check for an update to this program
     """)
@@ -45,6 +47,10 @@ while ans:
       restart_clearly = os.system("sudo fwconsole pm2 --restart='clearlydevices'")
     elif ans=="11":
       arp_scan = os.system("sudo arp-scan --interface=eth0 --localhost")
+    elif ans=="12":
+      arp_scan = os.system("sudo fail2ban restart")
+    elif ans=="13":
+      arp_scan = os.system("sudo fop2 restart")
     elif ans=="99":
       Quit = os.system("exit")
       clear=os.system("clear")
