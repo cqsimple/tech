@@ -1,4 +1,5 @@
-# Written by Ed Lentzimport os
+# Written by Ed Lentz
+import os
 clear = os.system("clear")
 print ("")
 print("CQ Simple Nimbus Command Line system.")
