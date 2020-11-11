@@ -3,7 +3,6 @@ import os
 clear = os.system("clear")
 print ("")
 print("CQ Simple Nimbus Command Line system.")
-print ("Use these commands with caution.")
 print("Enter the number of the command you want to run and press enter.")
 
 ans=True
