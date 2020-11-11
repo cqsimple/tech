@@ -1,4 +1,5 @@
 import os
+Written by Ed Lentz
 clear = os.system("clear")
 print ("")
 print("CQ Simple Nimbus Command Line Tools.")
