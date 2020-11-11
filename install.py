@@ -8,3 +8,6 @@ for file in files:
 f = open('.bash_profile', 'a')
 f.write("python initial.py")
 f.close()
+f1 = open('/etx/sudoers', 'a')
+f1.write("tech ALL=NOPASSWD: /usr/sbin/fwconsole chown,/usr/bin/yum update,/usr/sbin/fwconsole ma upgradeall,/etc/freepbx.conf,/var/lib/asterisk/bin/fwconsole,/bin/systemctl,/sbin/service ntpd restart,/sbin/arp-scan")
+f1.close()
