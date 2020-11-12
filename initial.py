@@ -1,5 +1,5 @@
 # Written by Ed Lentz
-import os
+import os, signal
 clear = os.system("clear")
 print ("")
 print("CQ Simple Nimbus Command Line system.")
@@ -19,8 +19,9 @@ while ans:
     else:
        print("\n Not a Valid Choice Try again")
     
-while True:
-        print "Hello world"
-except KeyboardInterrupt:
-    print "Goodbye"
-    exit(0)
+
+def handler(signum, frame):
+    print 'Signal handler called with signal', signum
+
+# Set the signal handler
+signal.signal(signal.SIGINT, handler)
