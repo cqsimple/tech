@@ -5,8 +5,14 @@ print ("")
 print("CQ Simple Nimbus Command Line system.")
 print("Enter the number of the command you want to run and press enter.")
 
-ans=True
-while ans:
+def sigint_handler(signum, frame):
+    print 'Stop pressing the CTRL+C!'
+ 
+signal.signal(signal.SIGINT, sigint_handler)
+def main():
+    while True:
+    ans=True
+    while ans:
     print("""
     1.Command Line Tools
     2.Update Tools program
@@ -18,10 +24,11 @@ while ans:
       restart_ntpd = os.system("python update.py")
     else:
        print("\n Not a Valid Choice Try again")
-    
+       time.sleep(1)
+ 
+##########
+ 
+if __name__ == "__main__":
+    main() 
 
-def handler(signum, frame):
-    print 'Signal handler called with signal', signum
 
-# Set the signal handler
-signal.signal(signal.SIGINT, handler)
