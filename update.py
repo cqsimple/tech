@@ -22,3 +22,5 @@ for file in files:
     
 print("You should have the latest version now.")
 time.sleep(10)
+
+clear = os.system("clear")
