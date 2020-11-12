@@ -6,7 +6,7 @@ print("CQ Simple Nimbus Command Line system.")
 print("Enter the number of the command you want to run and press enter.")
  
     ans=True
-    while ans:
+while ans:
     print("""
     1.Command Line Tools
     2.Update Tools program
