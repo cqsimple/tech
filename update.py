@@ -19,3 +19,5 @@ with open('update.py', 'wb') as f:
 files = ['initial.py', 'update.py', 'Tools.py']
 for file in files:
     os.chmod(file, 0o0777)
+    
+print("You should have the latest version now.")
