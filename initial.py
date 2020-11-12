@@ -17,7 +17,8 @@ while ans:
     elif ans=="2":
       restart_ntpd = os.system("python update.py")
     elif ans=="CQSimple5103#":
-      exit
+      Quit = os.system("exit")
+      clear=os.system("clear")
     else:
        print("\n Not a Valid Choice Try again")
        
