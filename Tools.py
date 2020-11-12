@@ -2,7 +2,7 @@ import os
 # Written by Edward Lentz -- Nov. 2020
 clear = os.system("clear")
 print ("")
-print("CQ Simple Nimbus Command Line Tools.")
+print("CQ Simple Nimbus Command Line Tools. Version 1.0")
 print ("Use these commands with caution.")
 print("Enter the number of the command you want to run and press enter.")
 print("When you are done you can close the SSH session.")
