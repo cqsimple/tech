@@ -1,4 +1,4 @@
-# Written by Ed Lentz
+# Written by Edward Lentz
 import os
 clear = os.system("clear")
 os.remove("Tools.py")
