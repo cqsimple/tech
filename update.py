@@ -1,5 +1,5 @@
 # Written by Edward Lentz
-import os, urllib2
+import os, urllib2,time
 
 filedata = urllib2.urlopen('https://raw.githubusercontent.com/cqsimple/tech/main/Tools.py')
 datatowrite = filedata.read()
@@ -21,3 +21,4 @@ for file in files:
     os.chmod(file, 0o0777)
     
 print("You should have the latest version now.")
+time.sleep(10)
