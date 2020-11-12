@@ -18,3 +18,9 @@ while ans:
       restart_ntpd = os.system("python update.py")
     else:
        print("\n Not a Valid Choice Try again")
+    
+while True:
+        print "Hello world"
+except KeyboardInterrupt:
+    print "Goodbye"
+    exit(0)
