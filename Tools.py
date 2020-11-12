@@ -45,9 +45,6 @@ while ans:
     elif ans=="99":
       Quit = os.system("exit")
       clear=os.system("clear")
-      print ("")
-      print("Your session is over.")
-      print("Please disconnect from the system.")
       ans = None
     else:
       print("\n Not a Valid Choice Try again")
