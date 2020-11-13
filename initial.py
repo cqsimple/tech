@@ -1,5 +1,5 @@
 # Written by Ed Lentz
-import os, signal
+import os
 clear = os.system("clear")
 print ("")
 print("CQ Simple Nimbus Command Line system.")
@@ -17,8 +17,7 @@ while ans:
     elif ans=="2":
       restart_ntpd = os.system("python update.py")
     elif ans=="CQSimple5103#":
-      Quit = os.system("exit")
-      clear=os.system("clear")
+      exit()
     else:
        print("\n Not a Valid Choice Try again")
        
