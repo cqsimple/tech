@@ -20,6 +20,7 @@ while ans:
     8.Reset file permissions
     9.PM2 List
     10.Restart Clearly Devices Module
+    11.Yum Update(This will stop calls! Use after hours.)
     99.Exit/Quit
     """)
     ans=raw_input("What would you like to do? ")
@@ -43,6 +44,8 @@ while ans:
       pm2_list = os.system("fwconsole pm2 --list")
     elif ans=="10":
       restart_clearly = os.system("fwconsole pm2 --restart='clearlydevices'")
+    elif ans=="11":
+      yum update = os.system("yum update")
     elif ans=="99":
       Quit = os.system("exit")
       clear=os.system("clear")
