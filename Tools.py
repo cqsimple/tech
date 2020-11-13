@@ -45,7 +45,7 @@ while ans:
     elif ans=="10":
       restart_clearly = os.system("fwconsole pm2 --restart='clearlydevices'")
     elif ans=="11":
-      yum update = os.system("yum update")
+      yum_update = os.system("yum update")
     elif ans=="99":
       Quit = os.system("exit")
       clear=os.system("clear")
