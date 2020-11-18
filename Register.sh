@@ -33,12 +33,12 @@ This system was sold to : $dealer
 The deployment number of this machine is: $deply
 The  MAC address of this machine is : $MAC
 The build date of this machine is: $NOW
-The Root Technician Tools Password is : $rpass
 The FOP2 License # is: $fop2
-CQ Simple Tech Root password is CQSimple5103#
+This system has the Tech Tools program installed.
 =======================================================================
 EOF
 cat >/var/www/html/Nimbusinfo.txt << EOF
+#File info that goes onto the system Menu
 =======================================================================
                        Nimbus $model Version 3.0
 Thank you for your Nimbus purchase. Here is some info on your system.
@@ -46,8 +46,8 @@ This system was sold to : $dealer
 The deployment number of this machine is: $deply
 The  MAC address of this machine is : $MAC
 The Dashboard License # is: $fop2
-
-=======================================================================
+This system has the Tech Tools program installed
+====================================================================
 EOF
 echo  "$rpass" | passwd --stdin root
 echo "Deployment ID $deply
@@ -55,5 +55,7 @@ The FOP2 license # is: $fop2
 The system was sold to: $dealer
 The MAC Address is: $MAC
 The WAN Ip of this system is: $WANIP
+This system has the Tech Tools program installed.
+The password to exit the Tools program is CQSimple5103#
 The Tech Root Password is: $rpass" | mail -s "$dealer -- Deployment # $deply" deployment@cqsimple.com
 echo " All Done!"
