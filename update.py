@@ -15,8 +15,13 @@ filedata2 = urllib2.urlopen('https://raw.githubusercontent.com/cqsimple/tech/mai
 datatowrite = filedata2.read()
 with open('update.py', 'wb') as f:
     f.write(datatowrite)
+    
+filedata3 = urllib2.urlopen('https://raw.githubusercontent.com/cqsimple/tech/main/irontec.repo')
+datatowrite = filedata3.read()
+with open('irontec.repo', 'wb') as f:
+    f.write(datatowrite)    
 
-files = ['initial.py', 'update.py', 'Tools.py']
+files = ['initial.py', 'update.py', 'Tools.py', 'irontec.repo']
 for file in files:
     os.chmod(file, 0o0777)
     
