@@ -2,7 +2,7 @@ import os
 # Written by Edward Lentz -- Nov. 2020
 clear = os.system("clear")
 print ("")
-print("CQ Simple Nimbus Command Line Tools. Version 1.0")
+print("CQ Simple Nimbus Command Line Tools. Version 1.1")
 print ("Use these commands with caution.")
 print ("You are responsible for anything done here.")
 print("Enter the number of the command you want to run and press enter.")
@@ -21,7 +21,7 @@ while ans:
     9.PM2 List
     10.Restart Clearly Devices Module
     11.Yum Update(This will stop calls! Use after hours.)
-    98. Update this set of tools.
+    12.Run SnGrep (SIP Tool)
     99.Exit/Quit
     """)
     ans=raw_input("What would you like to do? ")
@@ -47,6 +47,8 @@ while ans:
       restart_clearly = os.system("fwconsole pm2 --restart='clearlydevices'")
     elif ans=="11":
       yum_update = os.system("yum update")
+    elif ans=="12":
+      yum_update = os.system("sngrep")
     elif ans=="99":
       Quit = os.system("exit")
       clear=os.system("clear")
