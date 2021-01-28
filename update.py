@@ -16,19 +16,19 @@ datatowrite = filedata2.read()
 with open('update.py', 'wb') as f:
     f.write(datatowrite)
     
-filedata3 = urllib2.urlopen('https://raw.githubusercontent.com/cqsimple/tech/main/irontec.repo')
-datatowrite = filedata3.read()
-with open('irontec.repo', 'wb') as f:
-    f.write(datatowrite) 
+# filedata3 = urllib2.urlopen('https://raw.githubusercontent.com/cqsimple/tech/main/irontec.repo')
+# datatowrite = filedata3.read()
+# with open('irontec.repo', 'wb') as f:
+#    f.write(datatowrite) 
     
 
-files = ['initial.py', 'update.py', 'Tools.py', 'irontec.repo']
+files = ['initial.py', 'update.py', 'Tools.py']
 for file in files:
     os.chmod(file, 0o0777)
 
-original = r'/irontec.repo'
-target = r'/etc/yum.repos.d/irontec.repo'
-shutil.move(original,target)    
+# original = r'/irontec.repo'
+# target = r'/etc/yum.repos.d/irontec.repo'
+# shutil.move(original,target)    
     
 print("You should have the latest version now.")
 time.sleep(10)
